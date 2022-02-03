@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group
+        android:id="@+id/group"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_saldo"
+            android:icon="@drawable/hand"
+            android:title="Saldo"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/nav_obligasi"
+            android:icon="@drawable/bond"
+            android:title="Obligasi"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/nav_crypto"
+            android:icon="@drawable/cryptocurrencies"
+            android:title="Crypto"
+            app:showAsAction="never" />
+    </group>
+
+</menu>
