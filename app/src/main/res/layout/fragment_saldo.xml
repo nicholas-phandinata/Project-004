@@ -9,9 +9,10 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Rp 7.000.000"
+        android:gravity="center"
+        android:text="Rp X.XXX.XXX"
         android:textAlignment="center"
-        android:textColor="#FFEB3B"
+        android:textColor="#FF7A22"
         android:textSize="24sp"
         android:textStyle="bold" />
 

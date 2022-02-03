@@ -25,7 +25,6 @@ import id.nicholasp.project004.databinding.ActivityMainBinding;
 public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding binding;
     private ActionBarDrawerToggle toggle;
-    public Button btn_exit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,8 +32,6 @@ public class MainActivity extends AppCompatActivity {
 
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
         initView();
-
-        btn_exit = findViewById(R.id.btn_exit);
 
     }
 
@@ -81,6 +78,7 @@ public class MainActivity extends AppCompatActivity {
         btn_exit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 Intent intent = new Intent(android.content.Intent.ACTION_VIEW);
                 intent.setData(Uri.parse("https://www.maybank.co.id/"));
                 startActivity(intent);
