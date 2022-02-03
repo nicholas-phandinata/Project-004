@@ -60,7 +60,7 @@
                 android:backgroundTint="@android:color/holo_orange_light"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Keluar" />
+                android:text="Visit Maybank" />
         </LinearLayout>
 
     </androidx.appcompat.widget.LinearLayoutCompat>

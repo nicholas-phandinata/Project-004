@@ -1,8 +1,11 @@
 package id.nicholasp.project004;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
 
 import androidx.annotation.NonNull;
@@ -70,6 +73,19 @@ public class MainActivity extends AppCompatActivity {
 
     private void initView() {
         //custom toolbar
+        NavigationView navigationView = findViewById(R.id.navView);
+        View headerView = getLayoutInflater().inflate(R.layout.nav_header_layout, navigationView, false);
+        navigationView.addHeaderView(headerView);
+
+        Button btn_exit = headerView.findViewById(R.id.btn_exit);
+        btn_exit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(android.content.Intent.ACTION_VIEW);
+                intent.setData(Uri.parse("https://www.maybank.co.id/"));
+                startActivity(intent);
+            }
+        });
         setSupportActionBar(binding.toolbar);
 
         //default fragment dibuka pertama kali
