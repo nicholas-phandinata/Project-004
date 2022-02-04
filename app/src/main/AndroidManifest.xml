@@ -10,9 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Project004">
         <activity
-            android:name=".KeluarActivity"
-            android:exported="true" />
-        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

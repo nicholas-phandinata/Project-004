@@ -78,7 +78,6 @@ public class MainActivity extends AppCompatActivity {
         btn_exit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 Intent intent = new Intent(android.content.Intent.ACTION_VIEW);
                 intent.setData(Uri.parse("https://www.maybank.co.id/"));
                 startActivity(intent);
